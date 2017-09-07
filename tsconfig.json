@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"declaration": false,
+		"emitDecoratorMetadata": false,
+		"experimentalDecorators": false,
+		"module": "amd",
+		"moduleResolution": "node",
+		"noFallthroughCasesInSwitch": false,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"removeComments": true,
+		"sourceMap": false,
+		"strictNullChecks": false,
+		"target": "es5",
+		"allowJs": true,
+		"outFile": "./www/TypeScriptExample.js"
+	},
+	"files": [
+		"./src/TypeScriptExample.ts"
+	],
+	"compileOnSave": true
+}

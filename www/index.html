@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ConboJS - TypeScript Example</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0">
+		<!--<link href="examples.css" rel="stylesheet">-->
+	</head>
+	<body>
+		<type-script-example />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.js"></script>
+		<script>
+			requirejs.config
+			({
+				baseUrl: "./",
+				paths:
+				{
+					conbo: "../node_modules/conbo/lib/conbo"	
+				}
+			});
+			require(["TypeScriptExample"]);
+		</script>
+	</body>
+</html>

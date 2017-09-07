@@ -1,0 +1,27 @@
+{
+  "name": "conbo-example-typescript",
+  "version": "1.0.0",
+  "description": "Simple TypeScript example using ConboJS",
+  "main": "./www/index.html",
+  "dependencies": {
+    "conbo": "^4.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neilrackett/conbo-example-typescript.git"
+  },
+  "keywords": [
+    "conbo",
+    "typescript"
+  ],
+  "author": "Neil Rackett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neilrackett/conbo-example-typescript/issues"
+  },
+  "homepage": "https://github.com/neilrackett/conbo-example-typescript#readme"
+}
