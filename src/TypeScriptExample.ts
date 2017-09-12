@@ -1,15 +1,15 @@
 import * as conbo from 'conbo';
+import { conbons } from 'conbo';
 import MyContext from './core/MyContext';
 import InputView from './view/InputView';
 import OutputView from './view/OutputView';
 
-const ns = conbo('com.example.typescript');
-
-class TypeScriptExample extends conbo.Application 
+@conbons('com.example.typescript')
+export default class TypeScriptExample extends conbo.Application 
 {
 	declarations():void
 	{
-		this.namespace = ns;
+		this.namespace = conbo('com.example.typescript');
 		this.contextClass = MyContext;
 	}
 
@@ -25,5 +25,3 @@ class TypeScriptExample extends conbo.Application
 	}
 
 }
-
-ns.import({ TypeScriptExample });
