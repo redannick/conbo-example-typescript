@@ -4,7 +4,7 @@
   "description": "Simple TypeScript example using ConboJS",
   "main": "./www/index.html",
   "dependencies": {
-    "conbo": "^4.1.4"
+    "conbo": "^4.1.8"
   },
   "devDependencies": {},
   "scripts": {

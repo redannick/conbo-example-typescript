@@ -19,8 +19,8 @@ export default class TypeScriptExample extends conbo.Application
 
 		this.appendView
 		(
-			new OutputView(this.context.addTo()),
-			new InputView(this.context.addTo())
+			new OutputView(this.context),
+			new InputView(this.context)
 		);
 	}
 

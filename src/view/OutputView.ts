@@ -13,6 +13,6 @@ export default class OutputView extends conbo.View
 		this.myModel = undefined;
 
 		this.tagName = 'h1';
-		this.template = `<Hello <span cb-bind="myModel.name" />!`;
+		this.template = `Hello {{myModel.name}}!`;
 	}
 }
