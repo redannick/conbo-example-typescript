@@ -1,14 +1,10 @@
 {
   "name": "conbo-example-typescript",
-  "version": "1.0.0",
-  "description": "Simple TypeScript example using ConboJS",
+  "version": "1.1.0",
+  "description": "A simple ConboJS framework example using TypeScript and Webpack",
   "main": "./www/index.html",
-  "dependencies": {
-    "conbo": "^4.1.8"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -16,12 +12,23 @@
   },
   "keywords": [
     "conbo",
-    "typescript"
+    "typescript",
+    "webpack"
   ],
   "author": "Neil Rackett",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/neilrackett/conbo-example-typescript/issues"
   },
-  "homepage": "https://github.com/neilrackett/conbo-example-typescript#readme"
+  "homepage": "https://github.com/neilrackett/conbo-example-typescript#readme",
+  "dependencies": {
+    "conbo": "^4.1.13"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "copy-webpack-plugin": "^4.1.1",
+    "path": "^0.12.7",
+    "typescript": "^2.5.3",
+    "webpack": "^3.8.1"
+  }
 }

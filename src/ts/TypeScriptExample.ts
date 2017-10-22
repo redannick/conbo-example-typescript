@@ -1,21 +1,20 @@
 import * as conbo from 'conbo';
-import { conbons } from 'conbo';
 import MyContext from './core/MyContext';
 import InputView from './view/InputView';
 import OutputView from './view/OutputView';
 
-@conbons('com.example.typescript')
+@conbo.conbons('com.example.typescript', 'TypeScriptExample')
 export default class TypeScriptExample extends conbo.Application 
 {
-	declarations():void
+	protected declarations():void
 	{
 		this.namespace = conbo('com.example.typescript');
 		this.contextClass = MyContext;
 	}
 
-	initialize():void
+	protected initialize():void
 	{
-		console.info('Hello from ConboJS via TypeScript!');
+		console.info('Hello from ConboJS via TypeScript & Webpack!');
 
 		this.appendView
 		(
