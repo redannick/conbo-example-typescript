@@ -3,18 +3,20 @@ import MyContext from './core/MyContext';
 import InputView from './view/InputView';
 import OutputView from './view/OutputView';
 
-@conbo.conbons('com.example.typescript', 'TypeScriptExample')
+import '../sass/TypeScriptExample.scss';
+
+@conbo.conbons('conbo.example.typescript', 'TypeScriptExample')
 export default class TypeScriptExample extends conbo.Application 
 {
 	protected declarations():void
 	{
-		this.namespace = conbo('com.example.typescript');
+		this.namespace = conbo('conbo.example.typescript');
 		this.contextClass = MyContext;
 	}
 
 	protected initialize():void
 	{
-		console.info('Hello from ConboJS via TypeScript & Webpack!');
+		console.info('Hello from ConboJS using TypeScript, SASS & Webpack!');
 
 		this.appendView
 		(
