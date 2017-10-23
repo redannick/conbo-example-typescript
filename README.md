@@ -1,7 +1,7 @@
 ConboJS TypeScript Example
 ==========================
 
-A simple ConboJS framework example using TypeScript and Webpack.
+A simple ConboJS framework example using TypeScript, SASS and Webpack.
 
 How to use
 ----------
