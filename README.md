@@ -10,4 +10,4 @@ How to use
 1. Build the project using `npm webpack` or [Visual Studio Code](https://code.visualstudio.com/)
 1. Open `www/index.html` in your browser
 
-This example installs `TypeScript` and `Webpack` locally, but for everyday use we recommend installing both globally instead, using `npm i typescript webpack`.
+This example installs `TypeScript` and `Webpack` locally, but for everyday use we recommend installing both globally instead, using `npm i -g typescript webpack`.
