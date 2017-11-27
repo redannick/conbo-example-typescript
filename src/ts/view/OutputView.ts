@@ -1,8 +1,9 @@
-import * as conbo from 'conbo';
-import MyModel from "../model/MyModel";
+import { View, Viewable } from 'conbo';
 
-@conbo.conbons('conbo.example.typescript', 'OutputView')
-export default class OutputView extends conbo.View
+import MyModel from '../model/MyModel';
+
+@Viewable('conbo.example.typescript', 'OutputView')
+export default class OutputView extends View
 {
 	public myModel:MyModel;
 

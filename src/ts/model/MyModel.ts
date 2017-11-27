@@ -1,6 +1,6 @@
-import * as conbo from 'conbo';
+import { Hash } from 'conbo';
 
-export default class MyModel extends conbo.Hash
+export default class MyModel extends Hash
 {
 	public name:string = 'Conbo';
 }

@@ -1,12 +1,14 @@
+import '../sass/TypeScriptExample.scss';
+
 import * as conbo from 'conbo';
+import { Application, Viewable } from 'conbo';
+
 import MyContext from './core/MyContext';
 import InputView from './view/InputView';
 import OutputView from './view/OutputView';
 
-import '../sass/TypeScriptExample.scss';
-
-@conbo.conbons('conbo.example.typescript', 'TypeScriptExample')
-export default class TypeScriptExample extends conbo.Application 
+@Viewable('conbo.example.typescript', 'TypeScriptExample')
+export default class TypeScriptExample extends Application
 {
 	protected declarations():void
 	{

@@ -1,10 +1,10 @@
-import * as conbo from 'conbo';
-import MyModel from "../model/MyModel";
+import MyModel from '../model/MyModel';
+import { Viewable, View, Injectable } from 'conbo';
 
-@conbo.conbons('conbo.example.typescript', 'InputView')
-export default class InputView extends conbo.View
+@Viewable('conbo.example.typescript', 'InputView')
+export default class InputView extends View
 {
-	@conbo.injectable public myModel:MyModel;
+	@Injectable public myModel:MyModel;
 
 	protected declarations()
 	{
