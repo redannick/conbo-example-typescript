@@ -1,11 +1,11 @@
-import { View, Viewable, Injectable } from 'conbo';
+import { View, Viewable, Inject } from 'conbo';
 
 import MyModel from '../model/MyModel';
 
 @Viewable('conbo.example.typescript', 'OutputView')
 export default class OutputView extends View
 {
-	@Injectable public myModel:MyModel;
+	@Inject public myModel:MyModel;
 
 	protected declarations()
 	{
