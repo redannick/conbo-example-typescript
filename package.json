@@ -22,7 +22,7 @@
 	},
 	"homepage": "https://github.com/neilrackett/conbo-example-typescript#readme",
 	"dependencies": {
-		"conbo": "^4.1.17"
+		"conbo": "^4.1.18"
 	},
 	"devDependencies": {
 		"awesome-typescript-loader": "^3.2.3",
