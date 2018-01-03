@@ -4,7 +4,7 @@
         {
             "taskName": "Build TypeScript",
             "type": "shell",
-            "command": "npm run webpack -- --watch",
+            "command": "npm run serve",
             "group": {
                 "kind": "build",
                 "isDefault": true

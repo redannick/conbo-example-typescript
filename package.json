@@ -2,9 +2,10 @@
 	"name": "conbo-example-typescript",
 	"version": "1.1.0",
 	"description": "A simple ConboJS framework example using TypeScript, SASS and Webpack",
-	"main": "./www/index.html",
+	"main": "./dist/index.html",
 	"scripts": {
-		"webpack": "webpack"
+		"build": "webpack ",
+		"serve": "webpack-dev-server"
 	},
 	"repository": {
 		"type": "git",

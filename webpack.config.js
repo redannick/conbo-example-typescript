@@ -10,7 +10,8 @@ module.exports =
 	output: 
 	{
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'TypeScriptExample.js'
+		filename: 'TypeScriptExample.js',
+        publicPath: 'http://localhost:8086/'
     },
 
 	resolve: 
@@ -38,5 +39,13 @@ module.exports =
 		new webpack.optimize.UglifyJsPlugin({compress:{warnings:false}}),
 		new CopyWebpackPlugin([{from:'./src/index.html'}])
 	],
+
+	devServer: 
+	{
+        https: false,
+        host: 'localhost',
+        port: '8086',
+        clientLogLevel: 'none'
+	},
 
 };
