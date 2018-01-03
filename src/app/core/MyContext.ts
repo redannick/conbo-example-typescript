@@ -4,7 +4,7 @@ import MyModel from '../model/MyModel';
 
 export default class MyContext extends Context
 {
-	initialize()
+	protected initialize()
 	{
 		this.mapSingleton('myModel', MyModel);
 	}

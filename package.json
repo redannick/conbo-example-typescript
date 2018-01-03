@@ -4,7 +4,7 @@
 	"description": "A simple ConboJS framework example using TypeScript, SASS and Webpack",
 	"main": "./dist/index.html",
 	"scripts": {
-		"build": "webpack ",
+		"build": "webpack",
 		"serve": "webpack-dev-server"
 	},
 	"repository": {
