@@ -4,12 +4,12 @@ let webpack = require('webpack');
 
 module.exports = 
 { 
-	entry: './src/ts/TypeScriptExample.ts',
+	entry: './src/app/TypeScriptExample.ts',
 	devtool: 'source-map',
 
 	output: 
 	{
-		path: path.resolve(__dirname, 'www'),
+		path: path.resolve(__dirname, 'dist'),
 		filename: 'TypeScriptExample.js'
     },
 

@@ -1,4 +1,4 @@
-import '../sass/TypeScriptExample.scss';
+import './TypeScriptExample.scss';
 
 import * as conbo from 'conbo';
 import { Application, Viewable } from 'conbo';
