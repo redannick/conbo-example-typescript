@@ -10,8 +10,7 @@ module.exports =
 	output: 
 	{
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'TypeScriptExample.js',
-        publicPath: 'http://localhost:8086/'
+		filename: 'TypeScriptExample.js'
     },
 
 	resolve: 
