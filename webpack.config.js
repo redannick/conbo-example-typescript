@@ -1,50 +1,57 @@
-let CopyWebpackPlugin = require('copy-webpack-plugin');
-let path = require('path');
-let webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const isDevServer = process.argv.find(v => v.includes('webpack-dev-server'));
 
-module.exports = 
-{ 
-	entry: './src/app/TypeScriptExample.ts',
-	devtool: 'source-map',
+module.exports = env => 
+{
+	env || (env = {});
 
-	output: 
-	{
-		path: path.resolve(__dirname, 'dist'),
-		filename: 'TypeScriptExample.js'
-    },
+	const DEBUG = !!env.DEBUG || isDevServer;
 
-	resolve: 
-	{
-		extensions: ['.ts', '.tsx', '.js']
-	},
+	let plugins = [new CopyWebpackPlugin([{from:'./src/index.html'}])];
+	if (!DEBUG) plugins.unshift(new webpack.optimize.UglifyJsPlugin({compress:{warnings:false}}));
 
-	module: 
-	{
-		loaders: 
-		[
-			{
-				test: /\.tsx?$/, 
-				loader: 'ts-loader'
-			},
-			{
-				test: /\.scss$/,
-				loader: 'style-loader!css-loader!sass-loader'
-			}
-		]
-	},
+	return {
 
-	plugins: 
-	[
-		new webpack.optimize.UglifyJsPlugin({compress:{warnings:false}}),
-		new CopyWebpackPlugin([{from:'./src/index.html'}])
-	],
+		entry: './src/app/TypeScriptExample.ts',
+		devtool: 'source-map',
 
-	devServer: 
-	{
-        https: false,
-        host: 'localhost',
-        port: '8086',
-        clientLogLevel: 'none'
-	},
+		output: 
+		{
+			path: path.resolve(__dirname, 'dist'),
+			filename: 'TypeScriptExample.js'
+		},
 
-};
+		resolve: 
+		{
+			extensions: ['.ts', '.tsx', '.js']
+		},
+
+		module: 
+		{
+			loaders: 
+			[
+				{
+					test: /\.tsx?$/, 
+					loader: 'ts-loader'
+				},
+				{
+					test: /\.scss$/,
+					loader: 'style-loader!css-loader!sass-loader'
+				}
+			]
+		},
+
+		plugins,
+
+		devServer: 
+		{
+			https: false,
+			host: 'localhost',
+			port: '8086',
+			clientLogLevel: 'none'
+		},
+
+	};
+}
