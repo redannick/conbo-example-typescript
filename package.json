@@ -1,11 +1,11 @@
 {
 	"name": "conbo-example-typescript",
 	"version": "1.1.0",
-	"description": "A simple ConboJS framework example using TypeScript, SASS and Webpack",
+	"description": "A simple ConboJS framework example using TypeScript, SASS and ParcelJS",
 	"main": "./dist/index.html",
 	"scripts": {
-		"build": "webpack",
-		"serve": "webpack-dev-server",
+		"serve": "parcel src/index.html",
+		"build-prod": "parcel build src/index.html --out-dir dist",
 		"postinstall": "npm link typescript"
 	},
 	"repository": {
@@ -15,7 +15,7 @@
 	"keywords": [
 		"conbo",
 		"typescript",
-		"webpack"
+		"parceljs"
 	],
 	"author": "Neil Rackett",
 	"license": "MIT",
@@ -27,14 +27,8 @@
 		"conbo": "^4.2.5"
 	},
 	"devDependencies": {
-		"copy-webpack-plugin": "^4.1.1",
-		"css-loader": "^0.28.7",
-		"node-sass": "^4.5.3",
-		"path": "^0.12.7",
-		"sass-loader": "^6.0.6",
-		"style-loader": "^0.19.0",
-		"ts-loader": "^3.2.0",
-		"webpack": "^3.11.0",
-		"webpack-dev-server": "^2.11.1"
+		"node-sass": "^4.9.0",
+		"parcel-bundler": "^1.8.1",
+		"parcel-plugin-typescript": "^0.7.1"
 	}
 }
