@@ -9,6 +9,9 @@ export default class InputView extends View
 	protected declarations()
 	{
 		this.tagName = 'p';
-		this.template = `My name is <input type="text" placeholder="Name" cb-bind="myModel.name" />`;
+		this.template = `My name is <input type="text" placeholder="Name" cb-bind="myModel.name" />
+		<a href="./#!View1">view 1</a>
+		<a href="./#!View2">view 2</a>
+		`;
 	}
 }

@@ -4,7 +4,7 @@
 	"description": "A simple ConboJS framework example using TypeScript, SASS and ParcelJS",
 	"main": "./dist/index.html",
 	"scripts": {
-		"serve": "parcel src/index.html",
+		"serve": "parcel watch src/index.html --out-dir dist-dev",
 		"build-prod": "parcel build src/index.html --out-dir dist",
 		"postinstall": "npm link typescript"
 	},
